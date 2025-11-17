@@ -12,6 +12,10 @@
         font-family: Arial, sans-serif;
         margin: 20px;
       }
+      @keyframes langsamErscheinen {
+        from {opacity: 0; }
+        to { opacity: 1; }
+      }
       h1 {
         text-align: center;
         font-size: 36px;
@@ -20,6 +24,10 @@
         font-size: 18px;
         line-height: 1.5;
       }
+      @keyframes springen {
+        0%, 100% {transform: translateY(0); }
+        50% {transform: translateY(-20px); }
+      }
     </style>
   </head>
 
@@ -27,7 +35,7 @@
     <h1>Mein Erstes Portfolio</h1>
     <p>Lewin Zirk</p>
     <p>Erstes erstellen meines Portfolios</p>
-    <img src="7E444807-E93F-48E9-B189-9E7B700BE843(1).jpeg" alt="FPV Bros" width="400">
+    <img src="7E444807-E93F-48E9-B189-9E7B700BE843(1).jpeg" alt="flugzeug.jpg" width="400">
 
   </body>
 </html>
