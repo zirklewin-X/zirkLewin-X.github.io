@@ -12,21 +12,36 @@
         font-family: Arial, sans-serif;
         margin: 20px;
       }
+
+      /* Animation: langsam erscheinen */
       @keyframes langsamErscheinen {
-        from {opacity: 0; }
-        to { opacity: 1; }
+        from {opacity: 0;}
+        to {opacity: 1;}
       }
+
       h1 {
         text-align: center;
         font-size: 36px;
+        animation: langsamErscheinen 2s ease-in;
       }
+
       p {
         font-size: 18px;
         line-height: 1.5;
+        animation: langsamErscheinen 3s ease-in;
       }
+
+      /* Animation: springen */
       @keyframes springen {
-        0%, 100% {transform: translateY(0); }
-        50% {transform: translateY(-20px); }
+        0%, 100% {transform: translateY(0);}
+        50% {transform: translateY(-20px);}
+      }
+
+      img {
+        width: 400px;
+        display: block;
+        margin: 20px auto;
+        animation: springen 2s infinite;
       }
     </style>
   </head>
@@ -35,8 +50,6 @@
     <h1>Mein Erstes Portfolio</h1>
     <p>Lewin Zirk</p>
     <p>Erstes erstellen meines Portfolios</p>
-    <img src="7E444807-E93F-48E9-B189-9E7B700BE843(1).jpeg" alt="flugzeug" width="400">
-
-
+    <img src="7E444807-E93F-48E9-B189-9E7B700BE843(1).jpeg" alt="flugzeug">
   </body>
 </html>
