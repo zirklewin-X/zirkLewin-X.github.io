@@ -14,6 +14,11 @@
         text-align: center;
       }
 
+      @keyframes springen {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-20px); }
+      }
+
       img {
         width: 400px;
         margin: 20px auto;
@@ -21,12 +26,7 @@
         animation: springen 2s infinite;
       }
 
-      @keyframes springen {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-20px); }
-      }
-
-      .bearbeitung {
+      .in-bearbeitung {
         font-size: 24px;
         font-weight: bold;
         color: red;
@@ -38,9 +38,10 @@
   <body>
     <h1>Mein Erstes Portfolio</h1>
     <p>Lewin Zirk</p>
-    <p>Erstes Erstellen meines Portfolios in Bearbeitung</p>
+    <p>Erstes Erstellen meines Portfolios</p>
+    
     <img src="7E444807-E93F-48E9-B189-9E7B700BE843(1).jpeg" alt="flugzeug">
     
-    <div class="bearbeitung">Noch in Bearbeitung</div>
+    <div class="in-bearbeitung">In Bearbeitung</div>
   </body>
 </html>
