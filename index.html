@@ -11,15 +11,14 @@
         color: darkblue;
         font-family: Arial, sans-serif;
         margin: 20px;
+        text-align: center;
       }
 
-      @keyframes langsamErscheinen {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-
-      h1, p {
-        animation: langsamErscheinen 2s ease-in;
+      img {
+        width: 400px;
+        margin: 20px auto;
+        display: block;
+        animation: springen 2s infinite;
       }
 
       @keyframes springen {
@@ -27,19 +26,11 @@
         50% { transform: translateY(-20px); }
       }
 
-      img {
-        width: 400px;
-        display: block;
-        margin: 20px auto;
-        animation: springen 2s infinite;
-      }
-
       .bearbeitung {
-        text-align: center;
         font-size: 24px;
         font-weight: bold;
         color: red;
-        animation: langsamErscheinen 2s ease-in;
+        margin-top: 20px;
       }
     </style>
   </head>
@@ -48,10 +39,8 @@
     <h1>Mein Erstes Portfolio</h1>
     <p>Lewin Zirk</p>
     <p>Erstes Erstellen meines Portfolios</p>
-    <img src="7E444807-E93F-48E9-B189-9E7B700BE843(1).jpeg" alt="flugzeug" width="400">
+    <img src="7E444807-E93F-48E9-B189-9E7B700BE843(1).jpeg" alt="flugzeug">
     
-    <h1>Noch In Bearbeitung!!!</h1>
-    <p class="bearbeitung">Noch in Bearbeitung</p>
+    <div class="bearbeitung">Noch in Bearbeitung</div>
   </body>
 </html>
-
